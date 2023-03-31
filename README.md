@@ -1,4 +1,4 @@
-# drs-bundles-collection
+# Dr. Squatch Bundle Collection Take-Home Project
 Holly's bundle collection page for the Dr. Squatch take-home coding project. Thanks for the opportunity to work on this! It was a fun project :)
 
 ## How to Preview:
