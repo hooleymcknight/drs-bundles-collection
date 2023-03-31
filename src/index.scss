@@ -11,3 +11,109 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.top-banner {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+
+  h1 {
+    margin: auto 40px;
+  }
+}
+
+.filter-section {
+  color: #fff;
+  background: #213521;
+
+  p {
+    margin: 0;
+  }
+}
+
+.products-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  max-width: 1000px;
+  margin: auto;
+
+  .product-card {
+    max-width: 400px;
+    border: 1px solid #000;
+    border-radius: 8px;
+    margin: 20px;
+    padding: 30px 20px;
+  
+    img {
+      width: 95%;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .product-title {
+      font-weight: bold;
+      margin: 20px 0 5px;
+    }
+
+    .price-line {
+      display: flex;
+      font-size: 24px;
+
+      .original-price {
+        color: #808080;
+        text-decoration: line-through;
+        margin: 0 7px 0 0;
+      }
+  
+      .current-price {
+        color: #008001;
+        font-weight: bold;
+        margin: 0;
+      }
+    }
+
+    .tags {
+      display: flex;
+      margin: 2px 0;
+
+      .scent-tag {
+        color: #fff;
+        margin-right: 5px;
+        padding: 4px 10px;
+        border-radius: 20px;
+        text-transform: uppercase;
+        font-size: 14px;
+        letter-spacing: 0.5px;
+
+        &[data-scent="woodsy"] {
+          background: #165834;
+        }
+        &[data-scent="fresh"] {
+          background: #006fd6;
+        }
+        &[data-scent="citrus"] {
+          background: #de7c00;
+        }
+        &[data-scent="herbal"] {
+          background: #5a3714;
+        }
+        &[data-scent="rich"] {
+          background: #e0a17e;
+        }
+        &[data-scent="spiced"] {
+          background: #c10000;
+        }
+      }
+    }
+
+    .included-section {
+      font-size: 18px;
+
+      b {
+        display: block;
+        margin-bottom: 5px;
+      }
+    }
+  }
+}
