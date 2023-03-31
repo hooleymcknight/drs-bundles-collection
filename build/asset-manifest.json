@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "./static/css/main.a3f8a2cb.css",
+    "main.js": "./static/js/main.0dc89469.js",
+    "static/media/drs_hooley_horizontal.png": "./static/media/drs_hooley_horizontal.9674a3f216b655794e13.png",
+    "index.html": "./index.html",
+    "main.a3f8a2cb.css.map": "./static/css/main.a3f8a2cb.css.map",
+    "main.0dc89469.js.map": "./static/js/main.0dc89469.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a3f8a2cb.css",
+    "static/js/main.0dc89469.js"
+  ]
+}
