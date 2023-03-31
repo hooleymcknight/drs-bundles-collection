@@ -21,7 +21,7 @@ const Filter = (props) => {
 
   return (
     <div className="filter-section" shown={`${filtersShown}`}>
-      <button className="filter-toggle" onClick={toggleHandler}>
+      <button type="button" className="filter-toggle" onClick={toggleHandler}>
         <h2>Filter by Scent <FontAwesomeIcon icon={faChevronDown} /></h2>
       </button>
 
@@ -29,11 +29,11 @@ const Filter = (props) => {
         <ul>
           {props.defaultFilters.map(filterName => 
             <li key={filterName}>
-              <button onClick={(e) => {filterClickHandler(e)}}> <input type="checkbox" checked={props.activeFilters.includes(filterName) ? true : false} onClick={(e) => {filterClickHandler(e)}} /> {filterName} </button>
+              <button type="button" onClick={(e) => {filterClickHandler(e)}}> <input type="checkbox" tabIndex="-1" checked={props.activeFilters.includes(filterName) ? true : false} onClick={(e) => {filterClickHandler(e)}} /> {filterName} </button>
             </li>
           )}
         </ul>
-        <button className="clear-filters" onClick={clearFilterHandler}><FontAwesomeIcon icon={faXmark} /> Clear Filters</button>
+        <button type="reset" className="clear-filters" onClick={clearFilterHandler}><FontAwesomeIcon icon={faXmark} /> Clear Filters</button>
       </div>
     </div>
   )

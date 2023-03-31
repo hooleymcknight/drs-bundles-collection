@@ -22,12 +22,17 @@ const formatPrice = (rawPrice) => {
  */
 const checkInArray = (string, array) => {
   for (let i=0; i < array.length; i++) {
+    if (string === 'Birchwood Breeze' && array[i].startsWith('Birchwood Breeze Deodorant')) { // must include this extra bit for the edge case
+      return false
+    }
     if (String(array[i]).includes(string)) {
       return true
     }
   }
   return false
 }
+
+
 
 /**
  * formats the titles of the included products so the duplicates get an x# instead of extra entries
