@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react'
 import ProductCard from './ProductCard'
 
-const Products = () => {
+const Products = (props) => {
   const [products, setProducts] = useState([])
+
 
   const getProducts = async () => {
     await fetch('https://ae3t7l1i79.execute-api.us-east-1.amazonaws.com/bundles')
@@ -16,7 +17,7 @@ const Products = () => {
   }, [])
 
   return (
-    <div className="products-list">
+    <div className="products-list" filter={props.filters.join(' ')}>
       {products.map(x =>
         <ProductCard key={x.handle} data={x} />
       )}
